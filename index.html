@@ -8,15 +8,116 @@
     <title>Música</title>
 </head>
 <body class="body">
-    <form class="search" role="search" aria-label="Cerca artistes, cançons o podcasts">
-        <i class="icon-search" aria-hidden="false"></i>        
-        <input type="search" placeholder="Cerca artistes, cançons o podcasts">
-    </form>
-    <section class="playlistList" aria-labelledby="regio1">
+    <div class="layout">
+        <div class="layout-block">
+             <div class="layout-sidebar">
+                <div class="sidebar">
+            <header class="logo">
+                <a href="/" aria-current="page">
+                <img src="./images/spotifu-logo.png" class="logo-image" widht="112" height="32" alt="Logo Música">
+                </a>
+            </header> 
+             <nav class="menu" aria-label="Principal">
+                <ul class="menu-list">
+                <li class="menuItem is-active">
+                    <a href="/" class="link" aria-current="page">
+                        <i class="icon-home" aria-hidden="true"> </i>
+                        <span>Inici</span>
+                    </a>
+                </li>
+                <li class="menuItem ">
+                    <a href="/" class="link">
+                        <i class="icon-search" aria-hidden="true"> </i>
+                        <span>Cerca</span>
+                    </a>
+                </li>
+                <li class="menuItem">
+                    <a href="/" class="link">
+                        <i class="icon-creditCard" aria-hidden="true"> </i>
+                        <span>Premium</span>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            <nav class="list" aria-labelledby="library-navigation">
+                <h2 class="list-title" id="library-navigation">La teva biblioteca</h2>
+                <ul class="list-content">
+                <li class="list-item">
+                    <a href="#" class="link">Creada per tu</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="link">Escoltada recentment</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="link">Les que t'agraden</a>
+                </li>
+                </ul>
+            </nav>
+            <nav class="list" aria-labelledby="playlist-navigation">
+                 <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+                 <ul class="list-content">
+                <li class="list-item">
+                    <a href="#" class="link">El millor i insuperable</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="link">Fet per a disfrutar</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="link">Per a cantar a la dutxa</a>
+                </li>
+                <li class="list-item">
+                    <span class="ellipsis">               
+                    <a href="#" class="link">Les mes escoltades de la setmana per a tu que ets molt pro</a>
+                    </span>    
+                </li>
+                <li class="list-item">
+                    <a href="#" class="link">Sense aturar-te!</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="link">Les més populars</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="link">Mes cançons de Shazam</a>
+                </li>
+                </ul>
+            </nav>
+                </div>  
+            </div> 
+                <div class="layout-main">
+                    <div class="page">
+        <div class="sticky">
+            <div class="page-block">            
+                <header class="header" aria-label="Barra superior i menú de l'usuari">
+                <div class="navigation">
+                    <button class="navigation-prev" aria-label="Tornar" title="Tornar">
+                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                    </button>
+                    <button class="navigation-next" disabled aria-label="Endavant" title="Endavant">
+                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                    </button>        
+                </div>    
+                <form class="search" role="search" aria-label="Cerca artistes, cançons o podcasts">
+                    <i class="icon-search" aria-hidden="false"></i>        
+                    <input type="search" placeholder="Cerca artistes, cançons o podcasts">
+                </form>
+                </header>
+            </div>
+        </div>
+
+        <main class="page-block">
+            <section class="playlistList" aria-labelledby="regio1">
         <div class="playlistList-top">
             <h2 class="playlistList-title" id="regio1"> 
             Bona nit
             </h2>
+            <div class="navigation">
+                <button class="navigation-prev" aria-label="Tornar" title="Tornar">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                </button>
+                <button class="navigation-next" disabled aria-label="Endavant" title="Endavant">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                </button>        
+            </div>
         </div>
         <div class="playlistList-container">
             <div class="playlistB">
@@ -137,12 +238,20 @@
                 </div>
             </div>
         </div>  
-    </section>
-    <section class="playlistList" aria-labelledby="regio2">
+            </section>
+            <section class="playlistList" aria-labelledby="regio2">
         <div class="playlistList-top">
             <h2 class="playlistList-title" id="regio2"> 
             Escoltat recentment
             </h2>
+            <div class="navigation">
+                <button class="navigation-prev" aria-label="Tornar" title="Tornar">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                </button>
+                <button class="navigation-next" disabled aria-label="Endavant" title="Endavant">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                </button>        
+            </div>
         </div>
         <div class="playlistList-container">
             <div class="playlistA">
@@ -236,82 +345,230 @@
                 <h4 class="palylistA-description"> Heroes</h4>
             </div>        
         </div>  
-    </section>
+            </section>
+            <section class="playlistList" aria-labelledby="regio3">
+                <div class="playlistList-top">
+                    <h2 class="playlistList-title" id="regio3"> 
+                    Podcast
+                    </h2>
+                    <div class="navigation">
+                        <button class="navigation-prev" aria-label="Tornar" title="Tornar">
+                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                        </button>
+                        <button class="navigation-next" disabled aria-label="Endavant" title="Endavant">
+                            <i class="icon-arrowRight" aria-hidden="true"></i>
+                        </button>        
+                    </div>
+                </div>
+                <div class="playlistList-container">
+                    <div class="playlistA">
+                        <div class="playlistA-cover">        
+                            <img src="./images/foto1.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                             <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                               <i class="icon-play" aria-hidden="true"></i>
+                             </button>        
+                        </div>
+                        <h3 class="playlistA-title"> U2 </h3>
+                        <h4 class="palylistA-description"> Sonday Bloody Sunday</h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">        
+                            <img src="./images/foto2.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                             <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                               <i class="icon-play" aria-hidden="true"></i>
+                             </button>        
+                        </div>
+                        <h3 class="playlistA-title"> Pearl Jam </h3>
+                        <h4 class="palylistA-description"> Ocean</h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">        
+                            <img src="./images/foto3.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                             <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                               <i class="icon-play" aria-hidden="true"></i>
+                             </button>        
+                        </div>
+                        <h3 class="playlistA-title"> R.E.M </h3>
+                        <h4 class="palylistA-description"> Automatic For The People</h4>
+                    </div>    
+                    <div class="playlistA">
+                        <div class="playlistA-cover">        
+                            <img src="./images/foto4.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                             <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                               <i class="icon-play" aria-hidden="true"></i>
+                             </button>        
+                        </div>
+                        <h3 class="playlistA-title"> Sopa de Cabra </h3>
+                        <h4 class="palylistA-description"> Les Claus de Sal</h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">        
+                            <img src="./images/foto5.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                             <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                               <i class="icon-play" aria-hidden="true"></i>
+                             </button>        
+                        </div>
+                        <h3 class="playlistA-title"> Antonia Font </h3>
+                        <h4 class="palylistA-description"> Dins d'aquest Iglú</h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">        
+                            <img src="./images/foto6.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                             <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                               <i class="icon-play" aria-hidden="true"></i>
+                             </button>        
+                        </div>
+                        <h3 class="playlistA-title"> Damien Rice </h3>
+                        <h4 class="palylistA-description"> Colour me In</h4>
+                    </div>   
+                    <div class="playlistA">
+                        <div class="playlistA-cover">        
+                            <img src="./images/foto7.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                             <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                               <i class="icon-play" aria-hidden="true"></i>
+                             </button>        
+                        </div>
+                        <h3 class="playlistA-title"> Nirvana </h3>
+                        <h4 class="palylistA-description"> Smell like Teen Spirit</h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">        
+                            <img src="./images/foto8.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                             <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                               <i class="icon-play" aria-hidden="true"></i>
+                             </button>        
+                        </div>
+                        <h3 class="playlistA-title"> Stone Temple Pilots </h3>
+                        <h4 class="palylistA-description"> Black Sabath</h4>
+                    </div> 
+                    <div class="playlistA">
+                        <div class="playlistA-cover">        
+                            <img src="./images/foto9.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                             <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                               <i class="icon-play" aria-hidden="true"></i>
+                             </button>        
+                        </div>
+                        <h3 class="playlistA-title"> David Bowie </h3>
+                        <h4 class="palylistA-description"> Heroes</h4>
+                    </div>        
+                </div>  
+            </section>
+            <section class="playlistList" aria-labelledby="regio4">
+                        <div class="playlistList-top">
+                            <h2 class="playlistList-title" id="regio4"> 
+                            El millor d'allò immillorable
+                            </h2>
+                            <div class="navigation">
+                                <button class="navigation-prev" aria-label="Tornar" title="Tornar">
+                                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                </button>
+                                <button class="navigation-next" disabled aria-label="Endavant" title="Endavant">
+                                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                                </button>        
+                            </div>
+                        </div>
+                        <div class="playlistList-container">
+                            <div class="playlistA">
+                                <div class="playlistA-cover">        
+                                    <img src="./images/foto1.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                                     <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                                       <i class="icon-play" aria-hidden="true"></i>
+                                     </button>        
+                                </div>
+                                <h3 class="playlistA-title"> U2 </h3>
+                                <h4 class="palylistA-description"> Sonday Bloody Sunday</h4>
+                            </div> 
+                            <div class="playlistA">
+                                <div class="playlistA-cover">        
+                                    <img src="./images/foto2.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                                     <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                                       <i class="icon-play" aria-hidden="true"></i>
+                                     </button>        
+                                </div>
+                                <h3 class="playlistA-title"> Pearl Jam </h3>
+                                <h4 class="palylistA-description"> Ocean</h4>
+                            </div> 
+                            <div class="playlistA">
+                                <div class="playlistA-cover">        
+                                    <img src="./images/foto3.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                                     <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                                       <i class="icon-play" aria-hidden="true"></i>
+                                     </button>        
+                                </div>
+                                <h3 class="playlistA-title"> R.E.M </h3>
+                                <h4 class="palylistA-description"> Automatic For The People</h4>
+                            </div>    
+                            <div class="playlistA">
+                                <div class="playlistA-cover">        
+                                    <img src="./images/foto4.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                                     <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                                       <i class="icon-play" aria-hidden="true"></i>
+                                     </button>        
+                                </div>
+                                <h3 class="playlistA-title"> Sopa de Cabra </h3>
+                                <h4 class="palylistA-description"> Les Claus de Sal</h4>
+                            </div> 
+                            <div class="playlistA">
+                                <div class="playlistA-cover">        
+                                    <img src="./images/foto5.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                                     <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                                       <i class="icon-play" aria-hidden="true"></i>
+                                     </button>        
+                                </div>
+                                <h3 class="playlistA-title"> Antonia Font </h3>
+                                <h4 class="palylistA-description"> Dins d'aquest Iglú</h4>
+                            </div> 
+                            <div class="playlistA">
+                                <div class="playlistA-cover">        
+                                    <img src="./images/foto6.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                                     <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                                       <i class="icon-play" aria-hidden="true"></i>
+                                     </button>        
+                                </div>
+                                <h3 class="playlistA-title"> Damien Rice </h3>
+                                <h4 class="palylistA-description"> Colour me In</h4>
+                            </div>   
+                            <div class="playlistA">
+                                <div class="playlistA-cover">        
+                                    <img src="./images/foto7.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                                     <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                                       <i class="icon-play" aria-hidden="true"></i>
+                                     </button>        
+                                </div>
+                                <h3 class="playlistA-title"> Nirvana </h3>
+                                <h4 class="palylistA-description"> Smell like Teen Spirit</h4>
+                            </div> 
+                            <div class="playlistA">
+                                <div class="playlistA-cover">        
+                                    <img src="./images/foto8.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                                     <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                                       <i class="icon-play" aria-hidden="true"></i>
+                                     </button>        
+                                </div>
+                                <h3 class="playlistA-title"> Stone Temple Pilots </h3>
+                                <h4 class="palylistA-description"> Black Sabath</h4>
+                            </div> 
+                            <div class="playlistA">
+                                <div class="playlistA-cover">        
+                                    <img src="./images/foto9.jpeg" widht="150" height="150" alt="Cover de la Playlist Anim Hits">
+                                     <button class="buttonIcon is-primary" aria-label="Reproduir" title="Reproduir">
+                                       <i class="icon-play" aria-hidden="true"></i>
+                                     </button>        
+                                </div>
+                                <h3 class="playlistA-title"> David Bowie </h3>
+                                <h4 class="palylistA-description"> Heroes</h4>
+                            </div>        
+                        </div>  
+            </section>
+        </main>
+                    </div>
+                </div> 
+        </div>
 
 
-
-    <div class="sidebar">
-        <header class="logo">
-            <a href="/" aria-current="page">
-            <img src="./images/spotifu-logo.png" class="logo-image" widht="112" height="32" alt="Logo Música">
-            </a>
-        </header> 
-         <nav class="menu" aria-label="Principal">
-            <ul class="menu-list">
-            <li class="menuItem is-active">
-                <a href="/" class="link" aria-current="page">
-                    <i class="icon-home" aria-hidden="true"> </i>
-                    <span>Inici</span>
-                </a>
-            </li>
-            <li class="menuItem ">
-                <a href="/" class="link">
-                    <i class="icon-search" aria-hidden="true"> </i>
-                    <span>Cerca</span>
-                </a>
-            </li>
-            <li class="menuItem">
-                <a href="/" class="link">
-                    <i class="icon-creditCard" aria-hidden="true"> </i>
-                    <span>Premium</span>
-                </a>
-            </li>
-            </ul>
-        </nav>
-        <nav class="list" aria-labelledby="library-navigation">
-            <h2 class="list-title" id="library-navigation">La teva biblioteca</h2>
-            <ul class="list-content">
-            <li class="list-item">
-                <a href="#" class="link">Creada per tu</a>
-            </li>
-            <li class="list-item">
-                <a href="#" class="link">Escoltada recentment</a>
-            </li>
-            <li class="list-item">
-                <a href="#" class="link">Les que t'agraden</a>
-            </li>
-            </ul>
-        </nav>
-        <nav class="list" aria-labelledby="playlist-navigation">
-             <h2 class="list-title" id="playlist-navigation">Playlist</h2>
-             <ul class="list-content">
-            <li class="list-item">
-                <a href="#" class="link">El millor i insuperable</a>
-            </li>
-            <li class="list-item">
-                <a href="#" class="link">Fet per a disfrutar</a>
-            </li>
-            <li class="list-item">
-                <a href="#" class="link">Per a cantar a la dutxa</a>
-            </li>
-            <li class="list-item">
-                <span class="ellipsis">               
-                <a href="#" class="link">Les mes escoltades de la setmana per a tu que ets molt pro</a>
-                </span>    
-            </li>
-            <li class="list-item">
-                <a href="#" class="link">Sense aturar-te!</a>
-            </li>
-            <li class="list-item">
-                <a href="#" class="link">Les més populars</a>
-            </li>
-            <li class="list-item">
-                <a href="#" class="link">Mes cançons de Shazam</a>
-            </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="player">
+        <div class="layout-block">
+            <footer class="layout-bottom"> 
+                <div class="player">
         <div class="player-nowPlaying">
             <div class="nowPlaying">
                 <div class="nowPlaying-cover">
@@ -327,7 +584,7 @@
                   </a>
                  </div>    
         <div class="nowPlaying-actions">
-            <button class="player-control" role="switch" aria-label="Guardar a la teva biblioteca" title="Guardar a la teva  biblioteca">
+            <button class="player-control" role="switch" aria-checked="false" aria-label="Guardar a la teva biblioteca" title="Guardar a la teva  biblioteca">
                 <i class="icon-heart" aria-hidden="true"></i>   
             </button> 
             </div>
@@ -375,8 +632,11 @@
             </div>         
             </div>
         </div>
+                </div>
+            </footer>
         </div>
-        </div>
+    </div>
+        
 </body>
 </html>
 
